@@ -3,16 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { LinechartsComponent } from './linecharts/linecharts.component';
+import { GoogleChartsModule } from 'angular-google-charts';
+import { ImageserviceService} from './imageservice.service';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LinechartsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleChartsModule.forRoot(),
+
   ],
-  providers: [],
+  providers:  [ImageserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

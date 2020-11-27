@@ -1,0 +1,11 @@
+<google-chart  id="contentToConvert"
+   [title]="imgData.title"
+   [type]="imgData.type"
+   [data]="imgData.data"
+
+   [options]="imgData.options"
+   [width]="imgData.width"
+   [height]="imgData.height">
+</google-chart>
+
+<button type="button" (click)="convetToPDF()">export</button>
